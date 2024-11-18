@@ -1,0 +1,83 @@
+/* 1. Установите фон страницы */
+body {
+    background-color: #f5f5dc; /* Выберите любой цвет, кроме белого */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Контент должен быть шириной 1440px и центрирован */
+.container {
+    width: 1440px;
+    margin: 0 auto; /* Центрирование */
+    background-color: #fff; /* Фон контейнера */
+    padding: 20px;
+}
+
+/* 3. Установка шрифтов для каждого фильма */
+@font-face {
+    font-family: 'beermoney'; /* Название шрифта */
+    src: url('fonts/beermoney.ttf'); /* Путь к файлу шрифта */
+}
+@font-face {
+    font-family: 'ChristmasScriptC';
+    src: url('fonts/ChristmasScriptC.ttf');
+}
+@font-face {
+    font-family: 'gnyrwn971';
+    src: url('fonts/gnyrwn971.ttf');
+}
+
+#never-back-down p {
+    font-family: 'beermoney', sans-serif;
+}
+
+#legend-17 p {
+    font-family: 'ChristmasScriptC', sans-serif;
+}
+
+#interstellar p {
+    font-family: 'gnyrwn971', sans-serif;
+}
+
+/* 4. Стили для якорных ссылок */
+ul {
+    list-style: none; /* Убираем маркеры списка */
+}
+
+ul li a {
+    color: black; /* Черный цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* 5. Выровнять текст для каждого фильма по-разному */
+#never-back-down p {
+    text-align: center;
+}
+
+#legend-17 p {
+    text-align: justify;
+}
+
+#interstellar p {
+    text-align: left;
+}
+
+/* 6. Установить одинаковый размер для всех изображений */
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Изображение подстраивается под размеры без искажения */
+}
+
+/* 7. Закруглить края изображений */
+img {
+    border-radius: 15px; /* Радиус закругления */
+}
+
+/* 8. Выделение текста разными способами */
+p strong {
+    font-weight: bold;
+}
+p b {
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на занятия по танцам</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/submit_dance_registration" method="post">
+        
+       
+        <h2>Запись на занятия по танцам</h2>
+        
+        <fieldset>
+            <legend>Контактные данные</legend>
+            
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="tel">Телефон:</label>
+            <input type="tel" id="tel" name="tel" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите стиль танца</legend>
+            
+            <label><input type="radio" name="dance_style" value="hiphop" required> Хип-хоп</label>
+            <label><input type="radio" name="dance_style" value="ballet"> Балет</label>
+            <label><input type="radio" name="dance_style" value="salsa"> Сальса</label>
+            <label><input type="radio" name="dance_style" value="contemporary"> Контемпорари</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Уровень подготовки</legend>
+            
+            <label><input type="checkbox" name="level" value="beginner"> Начинающий</label>
+            <label><input type="checkbox" name="level" value="intermediate"> Средний</label>
+            <label><input type="checkbox" name="level" value="advanced"> Продвинутый</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Предпочтительное время занятий</legend>
+            
+            <label><input type="checkbox" name="preferred_time" value="morning"> Утро</label>
+            <label><input type="checkbox" name="preferred_time" value="afternoon"> День</label>
+            <label><input type="checkbox" name="preferred_time" value="evening"> Вечер</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Загрузите фото профиля (необязательно)</legend>
+            
+            <label for="profile_pic">Загрузить фото:</label>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+        </fieldset>
+
+        <fieldset>
+            <legend>Завершение</legend>
+            
+            <input type="submit" value="Записаться">
+            <input type="reset" value="Очистить форму">
+        </fieldset>
+    </form>
+</body>
+</html>
