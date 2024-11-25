@@ -1,0 +1,81 @@
+
+body {
+    background-color: #f5f5dc; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #fff; 
+    padding: 20px;
+}
+
+
+@font-face {
+    font-family: 'beermoney';
+    src: url('fonts/beermoney.ttf'); 
+}
+@font-face {
+    font-family: 'ChristmasScriptC';
+    src: url('fonts/ChristmasScriptC.ttf');
+}
+@font-face {
+    font-family: 'gnyrwn971';
+    src: url('fonts/gnyrwn971.ttf');
+}
+
+#never-back-down p {
+    font-family: 'beermoney', sans-serif;
+}
+
+#legend-17 p {
+    font-family: 'ChristmasScriptC', sans-serif;
+}
+
+#interstellar p {
+    font-family: 'gnyrwn971', sans-serif;
+}
+
+
+ul {
+    list-style: none; 
+}
+
+ul li a {
+    color: black; 
+    text-decoration: none; 
+}
+
+
+#never-back-down p {
+    text-align: center;
+}
+
+#legend-17 p {
+    text-align: justify;
+}
+
+#interstellar p {
+    text-align: left;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+
+img {
+    border-radius: 15px; 
+}
+
+p strong {
+    font-weight: bold;
+}
+p b {
+    font-weight: bold;
+}
